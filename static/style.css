@@ -1,0 +1,301 @@
+html,
+body {
+  /* get rid of pesky body margins*/
+  padding: 0;
+  margin: 0;
+  background-color: #B7B7B7;
+  font-family: Arial, sans-serif;
+  color: black;
+  /* so browser movement is not jarring*/
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* background gradient, play with deg for different shading*/
+  background: -webkit-linear-gradient(60deg, white, #2a8eae);
+  background: linear-gradient(30deg, white, #2a8eae);
+  height: 100vh;
+}
+
+
+/* Imported font here */
+@font-face {
+  src: url('assets/fonts/Atarian/SFAtarianSystem.ttf');
+  font-family: vance;
+}
+
+h1 {
+  font-size: 2em;
+  color: black;
+  display: block;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #5e8aa5;
+}
+
+h1,
+h2 {
+  font-family: vance;
+  /* Get rid of margins*/
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+img {
+  border: 0px;
+  height: 100px;
+}
+
+header {
+  float: left;
+}
+.middle {
+  float: left;
+  width: 100%;
+}
+
+.leftheader {
+  float: left;
+  margin: 10px;
+}
+
+.rightheader {
+  float: left;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+  margin: 10px;
+  /*width: 100%;*/
+}
+
+/* Using width here for map width */
+
+.right {
+  float: left;
+  margin: 10px;
+  width: 90%;
+}
+
+.mapouter {
+  overflow: hidden;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+  max-height: 80vh;
+  min-height: 60vh;
+  border: 0;
+  margin: 0;
+}
+
+/* Water goes in here*/
+footer {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+}
+
+/*Water animation*/
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.animate-waves {
+  width: 2048px;
+  height: 105px;
+  background-image: url(assets/images/water.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  animation: animatedBackground 40s linear infinite;
+}
+
+/*Google map stuff*/
+.mapouter {
+  overflow: hidden;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+  max-height: 80vh;
+  min-height: 50vh;
+  border: 0;
+  margin: 0;
+}
+
+form {
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+input {
+  font-family: Verdana;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 2px solid white;
+  font-size: 1em;
+  width: 200px;
+  padding: 7px;
+  background-color: white;
+}
+
+form button {
+  padding: 8px;
+  font-weight: bold;
+  width: 120px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background: black;
+  border-width: 0;
+  color: white;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background: none;
+  border-width: 0;
+}
+
+/*Successful subscription container*/
+
+#containerDuck{
+  text-align: center
+}
+#containerDuck h1{
+  font-size: 5em;
+}
+#containerDuck h2{
+  font-size: 3em;
+}
+#containerDuck img {
+  height: 70%;
+}
+
+/*hide is for jquery toggle not working in some browsers*/
+.hide { display: none; }
+
+/*Media Queries*/
+
+@media all and (min-width: 415px) {
+  .leftheader {
+    float: left;
+    margin: 15px;
+  }
+  .rightheader {
+    float: left;
+    margin: 15px;
+  }
+  .left {
+    float: left;
+    margin: 15px;
+  }
+  .right {
+    float: left;
+    margin: 15px;
+    width: 90%;
+  }
+  .animate-waves {
+    height: 105px;
+  }
+}
+
+@media all and (min-width: 650px) {
+  header {
+    width: 100%;
+  }
+  .leftheader {
+    float: left;
+    margin: 15px;
+  }
+  .rightheader {
+    float: right;
+    align-self: right;
+    margin: 15px;
+  }
+  .left {
+    float: left;
+    margin: 15px;
+    /*background-color:green;*/
+  }
+  .right {
+    float: left;
+    margin: 15px;
+    width: 90%;
+    /*background-color:yellow;*/
+  }
+  .animate-waves {
+    height: 105px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  img {
+    border: 0px;
+    height: 150px;
+  }
+  .container {
+    /*width: 100%;*/
+    height: 100vh;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  form {
+    text-align: right;
+  }
+
+  header {
+    width: 100%;
+  }
+  .middle {
+    float: left;
+  }
+  .leftheader {
+    float: left;
+    margin: 15px;
+  }
+  .rightheader {
+    float: right;
+    margin: 15px;
+  }
+  .left {
+    float: left;
+    text-align: left;
+    margin: 15px 0 15px 15px;
+  }
+  .right {
+    float: right;
+    margin: 15px 15px 15px 0;
+    width: 70%;
+  }
+  .mapouter {
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    max-height: 70vh;
+    min-height: 40vh;
+    border: 0;
+    margin: 0;
+  }
+  .animate-waves {
+    height: 105px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>802 Secure Rubber Duck</title>
+  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!-- <canvas id="canvas"></canvas> -->
+  <div class="container" id="containerMain">
+    <header>
+      <div class="leftheader">
+        <h1>RubberDucky</h1>
+        <h2>Where rubber meets the water.</h2>
+      </div>
+
+      <div class="rightheader">
+      <!-- Subscriber email form -->
+        <form method="post"  action="index.html">
+          <div class="input-group">
+            <input id="email" class="form-control" name="email" value="email" placeholder="Email" />
+            <button type="submit" value="send" name="subscribe" id="subscribe">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="middle">
+      <div class="left">
+        <button class="duck">
+        <img src="assets/images/duck.png">
+        </button>
+      </div>
+      <!-- The map -->
+      <div class="right">
+        <div class="mapouter">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d469716.3481107501!2d-149.93491159644248!3d61.1083396809509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1497994905362"  allowfullscreen></iframe>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="animate-waves">
+      </div>
+    </footer>
+  </div>
+
+  <!-- Container for successful post -->
+  <div id="containerDuck" class="hide">
+  <button class="duck">
+  <h1>RubberDucky</h1>
+        <h2>Where rubber meets the water.</h2>
+    <img src="assets/images/duck.svg">
+    </button>
+  </div>
+  <!-- Include some javascript -->
+  <script type="text/javascript" src="post.js"></script>
+</body>
+
+</html>
