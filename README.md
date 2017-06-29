@@ -1,5 +1,7 @@
-# RubberDucky subscribe to my email list
-## Using HTML, css, Javascript/AJAX, Flask server
+# RubberDucky
+# Subscribe to my email list
+## This project was my first attempt at using Flask. I also goofed around with css animations.
+## It's a basic html page where you can subscribe to an email list.
 ## http://rubberducky.zoobot.ai:8000/index.html
 
 # To start RubberDucky App
