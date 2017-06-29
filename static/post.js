@@ -35,7 +35,7 @@ $('form').submit(function(e) {
         $("#containerDuck").removeClass('hide');
         $("#containerDuck").show(100);
         $("#containerMain").hide(1);
-        $(".duck").append("<h1>You have been subscribed</h1>");
+        $(".duck").append("<h1>You subscribed!</h1>");
       },
       error: e => console.log('errors', JSON.stringify(e)),
       fail: () => console.log('fail')
