@@ -4,29 +4,28 @@
 
 * * *
 
-## http://rubberducky.zoobot.ai:8000/index.html
+### http://rubberducky.zoobot.ai:8000/index.html
 
-* * *
 
-## To start RubberDucky App
+### To start RubberDucky App
 *   pip install flask gunicorn
 
 * * *
 
-## Without gunicorn
-## Open terminal
-## Enter this command:
+### Without gunicorn
+### Open terminal
+### Enter this command:
 *   FLASK_APP=server2.py flask run
 
 * * *
 
-## Open Browser
-## Enter this url for serving via FLASK:
+### Open Browser
+### Enter this url for serving via FLASK:
 *   http://localhost:5000/index.html
 
 * * *
 
-## With gunicorn
+### With gunicorn
 *   rm -Rf __pycache__/
 *   kill -HUP `cat server2.pid`
 *   kill `cat server2.pid`
@@ -35,6 +34,6 @@
 
 * * *
 
-## Open Browser
-## Enter this url:
+### Open Browser
+### Enter this url:
 *   http://ip:5000/index.html
