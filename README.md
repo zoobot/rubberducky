@@ -1,10 +1,10 @@
 # RubberDucky
-## Email subscriber with Flask, HTML, and AJAX
-*   This project was my first attempt at using Flask. I also goofed around with css animations.
+### Email subscriber with Flask, HTML, and AJAX
+This project was my first attempt at using Flask. I also goofed around with css animations.
 
 * * *
 
-### http://rubberducky.zoobot.ai:8000/index.html
+http://rubberducky.zoobot.ai:8000/index.html
 
 
 ### To start RubberDucky App
@@ -19,9 +19,8 @@
 
 * * *
 
-### Open Browser
-### Enter this url for serving via FLASK:
-*   http://localhost:5000/index.html
+### Enter this url in Browser for serving via FLASK:
+http://localhost:5000/index.html
 
 * * *
 
@@ -34,6 +33,6 @@
 
 * * *
 
-### Open Browser
-### Enter this url:
-*   http://ip:5000/index.html
+
+### Enter this url in Browser:
+http://ip:5000/index.html
